@@ -1,0 +1,615 @@
+/*
+
+------NASLOVNA
+------USLUGE
+
+
+
+
+
+
+
+*/
+
+
+
+
+/*------NASLOVNA*/
+body{
+	position: relative;
+	background-color: #fff;
+	color: #636363;
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+}
+a{
+	text-decoration: none;
+	color: #636363;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+}
+
+/***************** MOBILE FIRST *****************/
+
+/*header*/
+header{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	background: #fff;
+	z-index: 100;
+	border-bottom: 1px solid #f0f0f0;
+	font-size: 20px;
+}
+
+.mobile-nav{
+	width: 95%;
+	margin: auto;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.desktop-nav{
+	display: none;
+}
+.nav-bar{
+	font-size: 20px;
+	padding: 15px;
+	color: #636363;
+
+}
+.nav-bar:hover, .nav-bar:active{
+	border-bottom: 2px solid #56C4CF;
+	color: #56C4CF;
+}
+.mobile-logo{
+	height: 50px;
+	width: auto;
+}
+
+#side-nav {
+    height: 300px; 
+    width: 100%; 
+    display: none;
+    position: fixed;
+    z-index: 100; 
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    padding-top: 20px; 
+    padding-left: 55px;
+    transition: 2s; 
+    text-align: left;
+
+}
+#side-nav li a {
+    padding: 8px 0px 8px 0px;
+    font-size: 18px;
+    color: #636363;
+    display: block;
+    transition: 2s;
+}
+.fa-times{
+	position: absolute;
+    top: 0;
+    right: 50px;
+    font-size: 20px;
+    padding: 15px;
+   color: #56C4CF;
+}
+.close-btn{
+	display: inline-block;
+}
+
+/*** hero ***/
+.hero{
+	background-image: url("../photos/background.png");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+
+}
+.logo-container{
+	position: relative;
+	height: 80vh;
+	width: 100%;
+}
+
+.large-logo{
+	height: 130px;
+	width: auto;
+	position: absolute;
+	top: 40%;
+	left: 25%;
+}
+
+
+/***** About us *****/
+.about-us{
+	width: 85%;
+	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+h1{
+	color: #56C4CF;
+	font-size: 50px;
+	font-style:italic;
+	font-weight: 550;
+	letter-spacing: 3px;
+	padding: 0px 20px;
+}
+.about-us p{
+	
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	line-height: 20px;
+	padding: 0px 20px;
+	word-spacing: 2px;
+	text-justify: distribute;
+
+}
+.image-container{
+	display: none;
+	
+}
+
+/********** team ****************/
+.team{
+	width: 100%;
+	background-image: url(../photos/pattern.png);
+	display: flex;
+	flex-direction: column;
+	/*align-items: center;*/
+}
+h4{
+/*	color: #56C4CF;*/
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: 0.5px; 
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+.our-team{
+	display: flex;
+	flex-flow: row wrap;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: center;
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.container img{
+	width: 50px;
+	height: 35px;
+}
+.team-members{
+	text-align: center;
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+.container i{
+	color: #56C4CF;
+}
+/*******services*******/
+.services-slider{
+	padding-top: 50px;
+	height: 300px;
+	margin-left: 15px;
+	margin-right: 15px;
+	z-index: -1;
+
+	
+}
+.owl-carousel{
+	display: inline-block;
+}
+.owl-carousel .item {
+	position: relative;
+	height: 280px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+
+}
+
+
+
+.owl-carousel .item-1 {
+	background-image: url("../photos/projektovanje.jpg");
+
+}
+.owl-carousel .item-2 {
+	background-image: url("../photos/energija.jpg");
+
+
+
+}
+.owl-carousel .item-3 {
+	background-image: url("../photos/legalizacija2.jpg");
+
+}
+.owl-carousel .item-4 {
+	background-image: url("../photos/nadzor1.jpg");
+
+}
+.owl-carousel .item-5 {
+	background-image: url("../photos/3d.jpg");
+}
+.owl-carousel .item-6 {
+	background-image: url("../photos/konsalting.jpg");
+
+}
+.owl-carousel .item h5 {
+	position: absolute;
+	text-align: left;
+	width: 80%;
+	top: : 0%;
+	left:0%;
+	color: #eee;
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: 4px; 
+	padding-left: 12px;
+}
+
+
+/* owl-nav */
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next {
+	position: absolute;
+ 	top: 45%;
+	z-index: 999;
+	font-family: "Montserrat", sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 2.5px;
+	width: 50px;
+	height: 30px;
+	color: #333;
+	text-align: center;
+	padding: 10px 0px;
+}
+.owl-carousel .owl-prev{
+	left: 0;
+}
+.owl-carousel .owl-next {
+	right: 0;
+}
+
+/* owl-dots */
+.owl-carousel .owl-dots .owl-dot {
+    display: inline-block;
+}
+.owl-carousel .owl-dots .owl-dot span {
+    position: relative;
+    width: 40px;
+    height: 5px;
+    margin: 5px 7px;
+    background: #a3a3a3;
+    opacity: 0.5;
+    display: block;
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+    transition: opacity 600ms ease;
+    border-radius: 0px;
+}
+.owl-carousel .owl-dots .owl-dot.active span,
+.owl-carousel .owl-dots .owl-dot:hover span {
+    opacity: 1;
+}
+
+/*********footer***********/
+footer{
+	
+	
+	
+}
+.contact-us{
+	margin-top: 30px;
+	height: 80px;
+	background: #ADADAD;
+	color: white;
+	padding-bottom: 4px;
+
+}
+.contact-us h3{
+	margin-left: 22px;
+	margin-bottom: 10px
+}
+.contact-us p{
+	font-size: 18px;
+	text-decoration: underline;
+	margin-top: 0px;
+	margin-left: 22px;
+
+	
+}
+.contact-us a{
+	color: white;
+}
+
+.info{
+	height:20px;
+	font-size: 15px;
+	padding-left: 13px;
+	padding-top: 5px;
+	margin-top: 5px;
+	color: black;
+	
+
+}
+.info i{
+	padding-left: 20px;
+	color: black;
+	
+}
+.info i:hover{
+	color:#ADADAD;
+
+}
+.fa-copyright{
+	float: right;
+
+	
+
+}
+.fa-facebook, .fa-google-plus-g, .fa-youtube, .fa-linkedin-in{
+	padding-left: 12px;
+
+}
+.info p{
+	font-size: 10px;
+    float: right;
+    margin: 0px;
+    padding-top: 3px;
+    padding-left: 3px;
+    
+}
+
+@media only screen and (min-width: 768px){
+	.large-logo{
+		height: auto;
+		top: 30%;
+		left: 30%;
+
+
+	}
+	.logo-container{
+		height: 100vh;
+	}
+	/*about*/
+	.image-container{
+		display: block;
+		width: 50%;
+	}
+	.about, .image-container, .about-img{
+		height: 707px;
+	}
+	.about{
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	.about-img{
+		width: 100%;
+	}
+
+	.about-us{
+		width: 50%;
+		margin-top: 0;
+
+	}
+	.about-us p{
+		text-align: justify;
+	}
+	h1{
+		padding-left: 40px;
+	}
+	p{
+		padding-right: 30px;
+		padding-left: 40px;
+	}
+	/***team****/
+	.our-team{
+	display: flex;
+	flex-flow: row nowrap;
+	}
+	.container{
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	align-items: center;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+	.team-members{
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 2px;
+	}
+
+	/****services*****/
+	.services-slider{
+		width:70%;
+		height: 500px;
+		margin: auto;
+	}
+	.owl-carousel .item {
+		height: 450px;
+	}
+	/******footer****/
+	
+	.contact-us{
+		display: flex;
+		justify-content: space-between;
+
+	}
+	.contact-us h3, p{
+		margin-top: auto;
+		margin-bottom:auto; 
+	}
+	.info p{
+		float: right;
+		padding-right: 18px;
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width: 993px){
+	/*navigation*/
+	.mobile-nav{
+		display: none;
+	}
+	.desktop-nav{
+		display: flex;
+    	justify-content: space-around;
+    	align-content: center;
+    	width: 100%;
+	}
+	.desktop-logo{
+		height: 50px;
+		width: auto;
+		position: fixed;
+		right: -1%;
+		display: none;
+	}
+	nav{
+		height: 50px;
+	}
+	.desktop-nav nav ul{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+	.desktop-nav nav ul li a{
+		font-size: 15px;
+		padding: 10px 15px;
+	}
+
+	.navigation{
+	display: inline-block;
+	text-align: center;
+	padding: 7px;
+}
+	.navigation-vr{
+		border-right: 1px solid gray;
+		padding: 7px;
+		margin-right: 5px;
+
+	}
+	.nav-icons{
+	height:20px;
+	font-size: 15px;
+	padding-top: 15px;
+	margin-top: 5px;
+	color: #636363;
+	}
+	.nav-icons a{
+		padding-left: 7px!important;
+		
+	}
+
+	.fa-facebook-f, .fa-google-plus-g, .fa-youtube{
+		color: #636363!important;
+	}
+	
+	.desktop-nav nav ul li a:hover, .desktop-nav nav ul li a:active{
+		border-bottom: 2px solid #56C4CF;
+
+
+	}
+	.desktop-nav .fb:hover, .desktop-nav .fb i:active{
+		border-bottom: none;
+
+	}
+	.fa-facebook-f:hover {
+    color: #12397a!important;
+	}
+
+	.fa-google-plus-g:hover {
+    color: #ce1c2e!important;
+	}
+	.fa-youtube:hover{
+		color: #9b000f!important;
+
+	}
+	.fa-linkedin-in:hover{
+		color: #6093e5!important;
+	}
+
+
+
+
+
+	/**hero image logo**/
+	.large-logo{
+	height: auto;
+	width: auto;
+	position: absolute;
+	top: 38%;
+	left: 38%;
+}
+
+
+	/*** about us ***/
+	h1{
+		font-size: 57px;
+		padding-left: 70px;
+	}
+	.about .about-us p{
+		padding-left: 70px;
+		padding-right: 60px;
+		padding-top: 20px;
+		font-size: 16px;
+		line-height: 21px;
+	}
+	.contact-us p{
+		margin-top: 30px;
+	}
+
+}
+
+
+@media only screen and (min-width: 1157px){
+
+	h1{
+		font-size: 57px;
+		padding-left: 80px;
+	}
+
+	.about .about-us p{
+		padding-left: 80px;
+		padding-right: 60px;
+		font-size: 15px;
+		line-height: 24px;
+	}
+	.contact-us p{
+		margin-top: 30px;
+	}
+
+
+}
+
+@media only screen and (min-width: 1500px){
+	.services-slider{
+		width:70%;
+		height: 700px;
+		margin: auto;
+	}
+	.owl-carousel .item {
+		height: 650px;
+	}
+	}
