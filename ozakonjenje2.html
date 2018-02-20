@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AS PLAN INŽENJERING</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/ozakonjenje2.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<!-- mobile navigation -->
+			<div class="mobile-nav">
+				<a href="#"><img src="photos/logo2.png" alt="logo" class="mobile-logo"></a>
+				<span class="nav-bar"><i class="fa fa-bars" aria-hidden="true"></i></span>
+				<ul id="side-nav">
+					<li class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></li>
+					<li><a href="index.html">NASLOVNA</a></li>
+					<li><a href="usluge.html">USLUGE</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="ozakonjenje2.html">OZAKONJENJE</a></li>
+					<li><a href="kontakt.html">KONTAKT</a></li>
+				</ul> 	
+			</div>
+		
+			<!--desktop navigation -->
+			<div class="desktop-nav">
+				<a href="#"><img src="photos/logo2.png" alt="logo" class="desktop-logo"></a>
+
+				<nav>
+					<ul>
+						<li class="navigation"><a href="index.html">NASLOVNA</a></li>
+						<li class="navigation"><a href="usluge.html">USLUGE</a></li>
+						<li class="navigation"><a href="blog.html">BLOG</a></li>
+						<li class="navigation"><a href="ozakonjenje2.html">OZAKONJENJE</a></li>
+						<li class="navigation-vr"><a href="kontakt.html">KONTAKT</a></li>
+						<li class="nav-icons">
+						<a href="https://www.facebook.com/asplaninzenjering/" target="blank" class="fb"><i class="fab fa-facebook-f" ></i></a></li>
+
+							
+						<li class="nav-icons"><a href="https://plus.google.com/u/0/115792178681981989775" target="blank" class="fb"><i class="fab fa-google-plus-g"></i></a></li>
+
+							
+				 		<li class="nav-icons"><a href="#" target="blank" class="fb"><i class="fab fa-youtube"></i></a></li>
+
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<article id="legalization">
+			<section class="bg">
+				<section class="instructions">
+					<h5>Legalizujte vaš objekat u 3 jednostavna koraka</h5>
+					<ul class="koraci">
+						<li><span>1.</span> Ispunite formular</li>
+						<li><span>2.</span> Dobijate besplatnu ponudu</li>
+						<li><span>3.</span> Dogovorite izlazak na teren</li>
+					</ul>
+					<p class="link"><a href="http://www.paragraf.rs/propisi/zakon_o_ozakonjenju_objekata.html" target="blank">Zakon o ozakonjenju objekata</a></p>
+				</section>
+			</section>
+		
+			<form action="mailto.php" method="post">
+				<label>Vaši podaci</label>
+				<input type="text" name="name" placeholder=" Ime i prezime" class="blank-space">
+				<input type="text" name="telephone" placeholder=" Kontakt telefon">
+				<input type="email" name="email" placeholder=" E-mail">
+				<label>Podaci o objektu</label>
+				<input type="text" name="opstina" placeholder=" Opstina objekta" class="blank-space">
+				<select>
+					<option value="empty">Izaberite tip objekta</option>
+					<option value="stambeni">Stambeni</option>
+					<option value="poslovni">Poslovni</option>
+					<option value="ekonomski">Ekonomski</option>
+					<option value="pomocni">Pomoćni</option>
+				</select>
+				<input type="number" name="povrsina" placeholder=" Bruto površina objekta *" required>
+				<select>
+					<option value="empty">Da li je za objekat ranije predat zahtev za legalizaciju?</option>
+					<option value="da">Da</option>
+					<option value="ne">Ne</option>
+				</select>
+			
+				<select>
+					<option value="empty">Da li je objekat izgrađen na državnom zemljištu?</option>
+					<option value="da">Da</option>
+					<option value="ne">Ne</option>
+				</select>
+
+				<select>
+					<option value="empty">Da li je objekat kompletiran uključujući krov, prozore, vrata i kompletne instalacije?</option>
+					<option value="da">Da</option>
+					<option value="ne">Ne</option>
+				</select>
+				<textarea placeholder=" Ukoliko je na pitanje odgovor NE, opišite do koje mere je objekat kompletiran."></textarea>
+				<select>
+					<option value="empty">Da li je objekat izgrađen do juna 2015. godine?</option>
+					<option value="da">Da</option>
+					<option value="ne">Ne</option>
+				</select>
+				<button>Pošalji</button>
+				<p class="napomena"><span>*</span>Bruto površina objekta je površina sa uračunatim spoljašnjim zidovima - spoljašnji gabarit sa terasom, podrumom, tavanom, garažom ako je u sklopu kuće.</p>
+			</form>
+		</article>
+
+		<footer>
+ 			<section class="info">
+	 			<a href="https://www.facebook.com/asplaninzenjering/" target="blank"><i class="fab fa-facebook-f"></i></a>
+
+	 			<a href="https://plus.google.com/u/0/115792178681981989775" target="blank"><i class="fab fa-google-plus-g"></i></a>
+	 			<a href="#" target="blank"><i class="fab fa-youtube"></i></a>
+
+	 			<a href="#" target="blank"><i class="fab fa-linkedin-in"></i></a>
+
+
+	 			<a href="#" target="blank"><p>SAAL 2018</p><i class="far fa-copyright"></i> </a>
+	 		
+	 		</section>
+ 		</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/sidemeni.js"></script>
+</body>
+</html>

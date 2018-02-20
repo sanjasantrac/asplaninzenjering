@@ -1,0 +1,115 @@
+h4{
+	margin-top: 40px;
+	color: #636363;
+	letter-spacing: 1px;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 20px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+hr{
+	height: 5px;
+    width: 10%;
+    margin: auto;
+    background: #56C4CF;
+    border: none;
+    margin-bottom: 20px
+}
+.projekt,.str-nad,.model{
+	left: 25%;
+}
+
+.e-e{
+	left: 13%;
+}
+
+p{
+	color: #636363;
+	font-size: 15px;
+	/*padding: 40px;*/
+	text-align: justify;
+	letter-spacing: 0.3px;
+	width: 80%;
+	margin: auto;
+	font-family: 'Montserrat', sans-serif;
+	word-spacing: 2px;
+
+}
+
+.consult{
+	margin-bottom: 30px;
+}
+
+
+header{
+	position: fixed;
+	
+}
+.copyright{
+	float: right;
+	width: 10%;
+
+}
+
+@media only screen and (min-width: 768px){
+	.white{
+	background: #fff;
+	height: 350px;
+
+
+	}
+	p{
+		width: 50%;
+		margin: auto;
+	}
+	.e-e{
+		/*left: 33%;*/
+	}
+	.projektovanje{
+		background-image: url("../photos/projektovanje.jpg");
+
+		
+	}
+	.efikasnost{
+		background-image: url("../photos/energija.jpg");
+	}
+	.ozakonjenje{
+		background-image: url("../photos/legalizacija2.jpg");
+	}
+	.nadzor{
+		background-image: url("../photos/nadzor1.jpg");
+	}
+	.modelovanje{
+		background-image: url("../photos/3d.jpg");
+	}
+	.konsalting{
+		background-image: url("../photos/konsalting.jpg");
+	}
+	.projektovanje, .efikasnost, .ozakonjenje, .konsalting, .nadzor, .modelovanje{
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+		height: 400px;
+		width: 85%;
+		margin: auto;
+
+	}
+	h4,.projekt,.str-nad,.model{
+
+	
+	}
+	
+}
+
+
+
+@media only screen and (min-width: 993px){
+
+	.projektovanje, .efikasnost, .ozakonjenje, .konsalting, .nadzor, .modelovanje{
+	width: 70%;
+	margin: auto;
+	
+	}
+
+}

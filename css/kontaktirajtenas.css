@@ -1,0 +1,161 @@
+.contact-us{
+	display: flex;
+	flex-direction: column;
+	height: 700px;
+}
+.left{
+
+	background-image: url("../photos/background.png");
+	background-size: cover;
+	width: 100%;
+	text-align: center;
+	
+}
+.left a{
+	position: absolute;
+	top: 50px;
+	left: 4%;
+}
+.left i{
+	
+	font-size: 36px;
+	font-style: italic;
+	font-weight: 400;
+	color: #636363;
+
+
+}
+.left img{
+	padding:auto;
+	margin-top: 100px;
+}
+.left p{
+	font-size: 14px;
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	margin-left: 25%;
+
+}
+.contact-form{
+	/*background: #dedfe0;*/
+	width: 100%;
+	text-align: center;
+}
+.contact-form h3{
+	margin-top: 100px;
+	color: #56C4CF;
+	font-size: 28px;
+	font-family: 'Montserat', sans-serif;
+}
+
+.contact-form input{
+	width: 50%;
+	margin: 5px 0px;
+	border: none;
+	border-bottom: 1px solid #56C4CF;
+	font-family: 'Montserat', sans-serif;
+
+	
+}
+.contact-form input[type=submit]{
+	font-size: 20px;
+	background: #56C4CF;
+	border: none;
+	width: 100px;
+	height: 50px;
+	border-radius: 5px;
+	color:white;
+}
+.contact-form input[placeholder]{
+	font-size: 20px;
+	color: #636363;
+}
+.contact-form input:focus{
+	outline: none;}
+	
+.contact-form textarea{
+	border: 1px solid #56C4CF;
+	width: 50%;
+	margin-bottom: 10px;
+
+}
+.contact-form textarea[placeholder]{
+	font-size: 20px;
+	color: #636363;
+	font-family: 'Montserat', sans-serif;
+}
+.contact-form textarea:focus{
+	outline: none;
+}
+
+
+
+
+
+@media only screen and (min-width: 993px){
+	.contact-us{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.left{
+		/* This section calls section-right animation we defined above */
+ 	 	animation: 0.5s ease-in 0s 1 section-left;
+ 	 	position: fixed;
+	    height: 100%;
+	    width: 50%;
+	    left: 0;
+	    top: 0;
+	}
+	.left p{
+		width: 30%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.contact-form{
+		/* This section calls section-right animation we defined above */
+ 	 	animation: 0.5s ease-in 0s 1 section-right;
+ 	 	position: fixed;
+	    height: 100%;
+	    width: 50%;
+	    right: 0;
+	    top: 0;
+	}
+	.contact-us{
+		z-index: 1001;
+	}
+	.section-left{
+		z-index: 100;
+
+	}
+	.section-right{
+    	z-index: 100;
+	}
+	.contact-form {  
+  
+  
+  	}
+	@keyframes section-right {
+  		0% {
+    		transform: translateX(100%);
+    		
+  			}
+  		50% {
+    		transform: translateX(70%);
+  			}
+  		
+}
+	@keyframes section-left {
+  		0% {
+    		transform: translateX(-100%);
+    	
+  			}
+  		50% {
+    		transform: translateX(-70%);
+  			}
+  			
+}
+
+	
+}
